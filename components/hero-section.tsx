@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 
@@ -25,14 +26,24 @@ export function HeroSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
-            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2">
-              Start Editing
-              <ArrowRight className="w-4 h-4" />
+            <Button
+              asChild
+              size="lg"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2"
+            >
+              <Link href="/#editor">
+                Start Editing
+                <ArrowRight className="w-4 h-4" />
+              </Link>
             </Button>
-            <Button size="lg" variant="outline">
-              View Examples
+            <Button asChild size="lg" variant="outline">
+              <Link href="/#showcase">View Examples</Link>
             </Button>
           </div>
+
+          <p className="text-sm text-muted-foreground">
+            Free trial available. No credit card required.
+          </p>
 
           <div className="flex items-center gap-8 mt-8 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">

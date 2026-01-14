@@ -16,30 +16,55 @@ export function Header() {
 
         <nav className="hidden md:flex items-center gap-6">
           <Link
-            href="#features"
+            href="/#product"
+            className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
+          >
+            Product
+          </Link>
+          <Link
+            href="/#features"
             className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
           >
             Features
           </Link>
           <Link
-            href="#showcase"
+            href="/#showcase"
             className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
           >
             Examples
           </Link>
           <Link
-            href="#testimonials"
+            href="/#faq"
             className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
           >
-            Reviews
-          </Link>
-          <Link href="#faq" className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors">
             FAQ
+          </Link>
+          <Link
+            href="/pricing"
+            className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
+          >
+            Pricing
+          </Link>
+          <Link
+            href="/quick-start"
+            className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
+          >
+            Quick Start
+          </Link>
+          <Link
+            href="/docs/api"
+            className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
+          >
+            API Docs
           </Link>
         </nav>
 
-        <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90">
-          Get Started
+        <Button
+          asChild
+          size="sm"
+          className="bg-primary text-primary-foreground hover:bg-primary/90"
+        >
+          <Link href="/#editor">Get Started</Link>
         </Button>
       </div>
     </header>

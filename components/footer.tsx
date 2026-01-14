@@ -20,7 +20,15 @@ export function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="#features"
+                  href="/#product"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  Product Overview
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/#features"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
                   Features
@@ -28,14 +36,9 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="#showcase"
+                  href="/pricing"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Examples
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
                   Pricing
                 </Link>
               </li>
@@ -43,20 +46,37 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="font-semibold mb-4">Company</h3>
+            <h3 className="font-semibold mb-4">Resources</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  About
+                <Link
+                  href="/quick-start"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  Quick Start
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  Blog
+                <Link
+                  href="/docs/api"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  API Docs
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <Link
+                  href="/#showcase"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  Examples
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
                   Contact
                 </Link>
               </li>
@@ -65,7 +85,18 @@ export function Footer() {
         </div>
 
         <div className="pt-8 border-t border-border/40 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-muted-foreground">© 2025 Nano Banana. All rights reserved.</p>
+          <div className="text-sm text-muted-foreground">
+            <div>© 2025 Nano Banana. All rights reserved.</div>
+            <div>
+              Contact:{" "}
+              <a
+                className="hover:text-foreground transition-colors"
+                href="mailto:supports@nanobananapic.space"
+              >
+                supports@nanobananapic.space
+              </a>
+            </div>
+          </div>
           <div className="flex items-center gap-6">
             <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               Privacy Policy

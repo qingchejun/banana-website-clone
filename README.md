@@ -15,6 +15,20 @@ Next.js (App Router) + TypeScript + Tailwind CSS 营销站点，包含图片上�
 2. 在 `.env.local` 配置环境变量：
    ```bash
    OPENROUTER_API_KEY=your_key_here
+   CREEM_API_KEY=your_key_here
+   # CREEM_ENV=test 或 live（默认 live）
+   # CREEM_BASE_URL=https://test-api.creem.io
+   CREEM_PRODUCT_BASIC_YEARLY=prod_xxx
+   CREEM_PRODUCT_PRO_YEARLY=prod_xxx
+   CREEM_PRODUCT_STUDIO_YEARLY=prod_xxx
+   CREEM_PRODUCT_BASIC_MONTHLY=prod_xxx
+   CREEM_PRODUCT_PRO_MONTHLY=prod_xxx
+   CREEM_PRODUCT_STUDIO_MONTHLY=prod_xxx
+   CREEM_PRODUCT_PACK_MINI=prod_xxx
+   CREEM_PRODUCT_PACK_CREATOR=prod_xxx
+   CREEM_PRODUCT_PACK_AGENCY=prod_xxx
+   # 可选：覆盖默认站点地址
+   # NEXT_PUBLIC_SITE_URL=https://www.nanobananapic.space
    ```
 3. 启动开发服务器：
    ```bash
@@ -68,6 +82,20 @@ Next.js (App Router) + TypeScript + Tailwind CSS 营销站点，包含图片上�
 2. Configure environment variables in `.env.local`:
    ```bash
    OPENROUTER_API_KEY=your_key_here
+   CREEM_API_KEY=your_key_here
+   # CREEM_ENV=test or live (defaults to live)
+   # CREEM_BASE_URL=https://test-api.creem.io
+   CREEM_PRODUCT_BASIC_YEARLY=prod_xxx
+   CREEM_PRODUCT_PRO_YEARLY=prod_xxx
+   CREEM_PRODUCT_STUDIO_YEARLY=prod_xxx
+   CREEM_PRODUCT_BASIC_MONTHLY=prod_xxx
+   CREEM_PRODUCT_PRO_MONTHLY=prod_xxx
+   CREEM_PRODUCT_STUDIO_MONTHLY=prod_xxx
+   CREEM_PRODUCT_PACK_MINI=prod_xxx
+   CREEM_PRODUCT_PACK_CREATOR=prod_xxx
+   CREEM_PRODUCT_PACK_AGENCY=prod_xxx
+   # Optional: override site URL
+   # NEXT_PUBLIC_SITE_URL=https://www.nanobananapic.space
    ```
 3. Start the dev server:
    ```bash
